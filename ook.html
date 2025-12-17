@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Read Book | BOOKVERSE</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="reader-header">
+  <h1 id="bookTitle"></h1>
+  <div class="reader-controls">
+    <button onclick="decreaseFont()">A−</button>
+    <button onclick="increaseFont()">A+</button>
+    <button onclick="toggleReaderMode()">🌙</button>
+    <button onclick="downloadPDF()">📥 PDF</button>
+  </div>
+</header>
+
+<div class="reader" id="bookContent"></div>
+
+<div class="side-panel">
+  <h3>🔖 Bookmarks</h3>
+  <ul id="bookmarkList"></ul>
+</div>
+
+<footer>
+  <a href="dashboard.html">⬅ Back</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:#f5f6fa;
+  color:#222;
+}
+
+/* HEADER */
+header{
+  background:linear-gradient(135deg,#1c1c2b,#2b2b44);
+  color:#fff;
+  padding:16px 30px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+header h1{
+  font-family:'DM Serif Display',serif;
+  letter-spacing:1px;
+}
+
+nav a{
+  color:#fff;
+  margin-right:15px;
+  text-decoration:none;
+  font-weight:500;
+}
+
+/* HERO */
+.hero{
+  height:60vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:#fff;
+  background:
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("https://picsum.photos/1600/900?blur=2");
+  background-size:cover;
+}
+
+.hero h2{
+  font-family:'DM Serif Display',serif;
+  font-size:48px;
+}
+
+.hero p{
+  margin-top:10px;
+  opacity:.9;
+}
+
+/* GRID */
+.grid{
+  padding:30px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.grid img{
+  width:100%;
+  border-radius:16px;
+  transition:.4s;
+}
+
+.grid img:hover{
+  transform:scale(1.05);
+}
+
+/* AUTH (LOGIN / SIGNUP) */
+.auth{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:
+    linear-gradient(135deg,#1c1c2b,#2b2b44);
+}
+
+.auth-card{
+  background:rgba(255,255,255,.12);
+  backdrop-filter:blur(20px);
+  padding:40px;
+  width:320px;
+  border-radius:18px;
+  box-shadow:0 20px 40px rgba(0,0,0,.3);
+  text-align:center;
+  color:#fff;
+}
+
+.auth-card h2{
+  font-family:'DM Serif Display',serif;
+  margin-bottom:20px;
+}
+
+.auth-card input{
+  width:100%;
+  padding:12px;
+  margin:10px 0;
+  border:none;
+  border-radius:8px;
+}
+
+.auth-card button{
+  width:100%;
+  padding:12px;
+  margin-top:10px;
+  border:none;
+  background:#ff7a18;
+  color:#fff;
+  font-weight:600;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+.auth-card a{
+  color:#ffd;
+  font-size:14px;
+}
+
+/* FOOTER */
+footer{
+  background:#1c1c2b;
+  color:#fff;
+  text-align:center;
+  padding:14px;
+}
+
+/* DARK MODE */
+.dark{
+  background:#0f0f14;
+  color:#eee;
+}
+.book-card{
+  background:#fff;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,.15);
+  transition:.3s;
+}
+
+.book-card img{
+  width:100%;
+  display:block;
+}
+
+.book-card h3{
+  padding:12px;
+  text-align:center;
+  font-weight:600;
+}
+
+.book-card:hover{
+  transform:translateY(-6px);
+}
+/* LAYOUT */
+.layout{
+  display:flex;
+  min-height:100vh;
+}
+
+.sidebar{
+  width:220px;
+  background:#1c1c2b;
+  color:#fff;
+  padding:20px;
+}
+
+.sidebar h2{
+  font-family:'DM Serif Display',serif;
+  margin-bottom:20px;
+}
+
+.sidebar a{
+  display:block;
+  color:#fff;
+  padding:10px 0;
+  text-decoration:none;
+  opacity:.85;
+}
+
+.sidebar a:hover{opacity:1}
+
+.main{
+  flex:1;
+  background:#f4f6fa;
+}
+
+/* TOPBAR */
+.topbar{
+  padding:20px;
+  display:flex;
+  justify-content:space-between;
+}
+
+/* BOOK CARD */
+.book-card{
+  background:#fff;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,.15);
+  transition:.3s;
+}
+
+.book-card:hover{transform:translateY(-6px)}
+
+.book-card h3{
+  text-align:center;
+  padding:10px;
+}
+
+.stars{
+  text-align:center;
+  font-size:22px;
+  cursor:pointer;
+  padding-bottom:10px;
+}
+
+/* PROFILE */
+.profile{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+.profile img{
+  border-radius:50%;
+  margin-bottom:15px;
+}
+.filter-bar{
+  padding:20px;
+  display:flex;
+  gap:15px;
+  background:#fff;
+  box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.filter-bar select{
+  padding:8px;
+  border-radius:6px;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Profile | BOOKVERSE</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="profile">
+  <img src="https://picsum.photos/150">
+  <h2>User Profile</h2>
+  <p>Email: <b id="userEmail"></b></p>
+  <p>Books Read: 23</p>
+  <p>Favorite Genre: Fantasy</p>
+  <a href="dashboard.html"><button>Back to Dashboard</button></a>
+</div>
+
+<script>
+document.getElementById("userEmail").innerText =
+  localStorage.getItem("user") || "Guest";
+</script>
+
+</body>
+</html>

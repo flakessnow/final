@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard | BOOKVERSE</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h2>📚 BOOKVERSE</h2>
+
+    <!-- reloads dashboard -->
+    <a href="dashboard.html">🏠 Dashboard</a>
+
+    <!-- opens first book directly -->
+    <a href="#" onclick="openBook('fantasy')">📖 Read Book</a>
+
+    <!-- logout works -->
+    <a href="#" onclick="logout()">🚪 Logout</a>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+
+    <h2>Available Books</h2>
+
+    <div class="filter-bar">
+      <select id="genreFilter" onchange="filterBooks()">
+        <option value="">All Genres</option>
+        <option>Fantasy</option>
+        <option>Science</option>
+        <option>Romance</option>
+        <option>Thriller</option>
+      </select>
+
+      <select id="ratingFilter" onchange="filterBooks()">
+        <option value="0">All Ratings</option>
+        <option value="4">⭐ 4+</option>
+        <option value="5">⭐ 5</option>
+      </select>
+    </div>
+
+    <section class="grid">
+
+      <div class="book-card" data-genre="Fantasy" data-rating="5"
+           onclick="openBook('fantasy')">
+        <img src="https://picsum.photos/400/400?10">
+        <h3>The Wizard’s Legacy</h3>
+      </div>
+
+      <div class="book-card" data-genre="Science" data-rating="5"
+           onclick="openBook('science')">
+        <img src="https://picsum.photos/400/400?11">
+        <h3>Beyond Time and Space</h3>
+      </div>
+
+      <div class="book-card" data-genre="Romance" data-rating="4"
+           onclick="openBook('romance')">
+        <img src="https://picsum.photos/400/400?12">
+        <h3>Hearts Across Seasons</h3>
+      </div>
+
+      <div class="book-card" data-genre="Thriller" data-rating="5"
+           onclick="openBook('thriller')">
+        <img src="https://picsum.photos/400/400?13">
+        <h3>Shadows of the Unknown</h3>
+      </div>
+
+    </section>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

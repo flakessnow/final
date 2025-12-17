@@ -1,0 +1,15 @@
+{
+  "name": "BOOKVERSE",
+  "short_name": "Bookverse",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#1e1e2f",
+  "theme_color": "#1e1e2f",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/29/29302.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
